@@ -1,0 +1,66 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<?xml-stylesheet rel="stylesheet" type="text/css" href="xmlstyle.css"?>
+<setList>
+  <song>
+    <name>Azucar</name>
+    <artist>Earl Sweatshirt</artist>
+    <genre>rap</genre>
+    <year>2018</year>
+  </song>
+  <song>
+    <name>Really Doe</name>
+    <artist>Danny Brown</artist>
+    <genre>rap</genre>
+    <year>2016</year>
+  </song>
+  <song>
+    <name>Kenan Vs. Kel</name>
+    <artist>JPEGMAFIA</artist>
+    <genre>rap</genre>
+    <year>2019</year>
+  </song>
+  <song>
+    <name>Meat Grinder</name>
+    <artist>Madvillain</artist>
+    <genre>rap</genre>
+    <year>2004</year>
+  </song>
+  <song>
+    <name>Rhinestone Cowboy</name>
+    <artist>Madvillain</artist>
+    <genre>rap</genre>
+    <year>2004</year>
+  </song>
+  <song>
+    <name>Shattered Dreams</name>
+    <artist>Earl Sweatshirt</artist>
+    <genre>rap</genre>
+    <year>2018</year>
+  </song>
+  <song>
+    <name>Butter</name>
+    <artist>A Tribe Called Quest</artist>
+    <genre>rap</genre>
+    <year>1991</year>
+  </song>
+  <song>
+    <name>Faucet</name>
+    <artist>Earl Sweatshirt</artist>
+    <genre>rap</genre>
+    <year>2015</year>
+  </song>
+  <song>
+    <name>Crime Riddim</name>
+    <artist>Skepta</artist>
+    <genre>rap</genre>
+    <year>2016</year>
+  </song>
+  <song>
+    <name>Flat Tummy Tea</name>
+    <artist>Freddie Gibbs</artist>
+    <genre>rap</genre>
+    <year>2019</year>
+  </song>
+</setList>
+    
+    

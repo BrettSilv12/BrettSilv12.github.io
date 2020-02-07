@@ -1,0 +1,14 @@
+song { 
+     color: lightblue; 
+     background-color : black; 
+     border: 1px solid gold; 
+     width: 100%; 
+} 
+ name { 
+     color: black; 
+     font-size : 40px; 
+     background-color : powderblue; 
+} 
+ song, name, artist, genre, year { 
+     display : block; 
+} 
