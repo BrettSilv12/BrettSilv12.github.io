@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 5 Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript">
+        function calculate()
+        {
+            hotdogs = 3.25;
+            fries = 2.00;
+            drinks = 1.50;
+            n1 = document.getElementById("num1").value; //very direct way to access the form entry
+            n2 = document.getElementById("num2").value;
+            n3 = document.getElementById("num3").value; //can return null, and allows you to handle that event accodringly
+            //alert (n1 + parseInt(n2)) //gives a popup of the result of n1 + n2
+            total = (parseInt(n1) * hotdogs) + (parseInt(n2) * fries) + (parseInt(n3) * drinks);
+            document.getElementById("subtotal").value = total.toFixed(2);
+            if(total >= 20.00)
+            {
+                document.getElementById("discount").value = (-1 *(total * 0.1)).toFixed(2);
+                total = total * 0.9;
+            }
+            tax = total * 0.0625;
+            total = total + tax;
+            document.getElementById("tax").value = tax.toFixed(2);
+            document.getElementById("result").value = total.toFixed(2); //sets the form's document field to the result of n1+n2
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        JOE'S HOTDOG STAND <br/>
+        Please fill out the form to place your order: <br/><br/>
+        Hotdogs <input type="text" name="num1" id="num1" value="0"><br/>
+        French Fries <input type="text" name="num2" id="num2" value="0"><br/>
+        Drinks <input type="text" name="num3" id="num3" value="0"><br/><br/><br/>
+        Subtotal <input type="text" name="subtotal" id="subtotal"><br/>
+        Discount <input type="text" name="discount" id="discount" value="0.00"><br/>
+        Tax <input type="text" name="tax" id="tax"><br/>
+        Total (after tax) <input type="text" name="result" id="result">
+        <br/><br/>
+        <input type="button" value="Calculate" onclick ="calculate()">
+    </form>
+</body>
+</html>    
