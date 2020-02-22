@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 6 Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript">
+        function calculate()
+        {
+            n1 = document.getElementById("nums").value;
+            n2 = document.getElementById("num6").value;
+            var inputArr = n1.split(' ');
+            inputArr.push(n2);
+            
+            var results = [];
+            for(i=0; i<5; i++)
+            {
+                results.push(Math.floor(Math.random() * 48));
+            }
+            results.push(Math.floor(Math.random() * 18));
+            for(i = 0; i < 6; i++)
+            {
+                //alert(results[i]);
+            }
+            
+            var same = 0;
+            for(i = 0; i < 5; i++)
+            {
+                if(inputArr[i] == results[i])
+                {
+                    same += 1;
+                }
+            }
+            var pb = 0;
+            if(inputArr[5] == results[5])
+                pb = 1;
+            
+            var calculator = ["0", "4", "6", "3", "25", "20", "150", "200", "5000", "25k a YEAR for LIFE!", "7k a WEEK for LIFE!"];
+            var winnings = calculator[same + pb];
+            alert("YOU WON $" + winnings + " FROM THIS POWERBALL GAME");
+            
+            var printr = results.toString();
+            document.getElementById("result").innerHTML = printr;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        POWERBALL SIM <br/>
+        Please fill out the form with your 6 chosen numbers: <br/>
+        The first 5 must be between 1 and 48, and the last must be between 1 and 18<br/><br/>
+        First 5 numbers ( space separated ): <input type="text" name="nums" id="nums"><br/>
+        Lucky Ball: <input type="number" name="num6" id="num6" value="1" min="1" max="18"><br/><br/>
+        <br/><br/>
+        <input type="button" value="Submit" onclick ="calculate()">
+    </form>
+    
+    <p> POWERBALL RESULTS: </p>
+    <p id="result"></p>
+</body>
+</html>    
