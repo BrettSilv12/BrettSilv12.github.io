@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Read JSON pls</title>
+</head>
+
+<body>
+	<script>
+	var data = [
+    {
+    "artist": "Earl Sweatshirt",
+    "title": "Solace",
+    "genre": "rap",
+    "year": "2015",
+},
+
+    {
+    "artist": "Madvillain",
+    "title": "Rhinestone Cowboy",
+    "genre": "rap",
+    "year": "2004",
+},
+
+    {
+    "artist": "Navy Blue",
+    "title": "With Sage",
+    "genre": "rap",
+    "year": "2020",
+},
+
+    {
+    "artist": "Standing on the Corner",
+    "title": "Side X",
+    "genre": "jazz",
+    "year": "2017",
+},
+
+    {
+    "artist": "King Krule",
+    "title": "Stoned Again",
+    "genre": "rock",
+    "year": "2020",
+},
+
+    {
+    "artist": "Frank Ocean",
+    "title": "Solo (Reprise)",
+    "genre": "rap",
+    "year": "2016",
+},
+
+    {
+    "artist": "Flying Lotus",
+    "title": "Takashi",
+    "genre": "rap",
+    "year": "2019",
+},
+
+    {
+    "artist": "JPEGMAFIA",
+    "title": "Kenan Vs. Kel",
+    "genre": "rap",
+    "year": "2019",
+},
+
+    {
+    "artist": "Milo",
+    "title": "aubergine cloak",
+    "genre": "rap",
+    "year": "2018",
+},
+
+    {
+    "artist": "A Tribe Called Quest",
+    "title": "Butter",
+    "genre": "rap",
+    "year": "1991",
+},
+    ]
+    // var tbl=$("<table/>").attr("id", "mytable");
+    // $("#div1").append(tbl);
+    for (var t = 0; t < data.length; t++){
+        // var tr = "<tr>";
+        // var td1 = "<td>" + data[t]["artist"] + "</td>";
+        // var td2 = "<td>" + data[t]["title"] + "</td>";
+        // var td3 = "<td>" + data[t]["genre"] + "</td>";
+        // var td4 = "<td>" + data[t]["year"] + "</td></tr>";
+        // $("#mytable").append(tr + td1 + td2 + td3 + td4);
+    
+        strSong  = JSON.stringify(data[t]["title"]);
+    	document.write ("<b>"+ strSong +  "</b><br>")
+     	strSong  = JSON.stringify(data[t]["artist"]);
+    	document.write ("Artist: " + strSong +  "<br>")
+        strSong  = JSON.stringify(data[t]["genre"]);
+    	document.write ("Genre: " + strSong +  "<br>")
+        strSong  = JSON.stringify(data[t]["year"]);
+    	document.write ("Released: " + strSong +  "<br><br><br>")
+
+    }
+	</script>
+    
+    <div id="div1">
+        </div>
+</body>
+</html>
